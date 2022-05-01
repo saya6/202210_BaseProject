@@ -1,0 +1,25 @@
+<div class="row row-cols-2">
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre común</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Clima</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let plant of plants">
+        <tr>
+          <th scope="row">{{ plant.id }}</th>
+          <td>{{ plant.nombre_comun }}</td>
+          <td>{{ plant.tipo }}</td>
+          <td>{{ plant.clima }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="row row-cols-1" *ngFor="let ocurrency of ocurrencies | keyvalue">
+  <p>Total plantas de {{ocurrency.key}}: {{ocurrency.value}}</p>
+</div>
