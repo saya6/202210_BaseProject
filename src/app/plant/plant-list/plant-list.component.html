@@ -20,7 +20,6 @@
     </table>
   </div>
 </div>
-<div class="row row-cols-1">
-  <p>Total plantas de interior: 1</p>
-  <p>Total plantas de exterior: 2</p>
+<div class="row row-cols-1" *ngFor="let ocurrency of ocurrencies | keyvalue">
+  <p>Total plantas de {{ocurrency.key}}: {{ocurrency.value}}</p>
 </div>

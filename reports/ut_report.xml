@@ -1,11 +1,6 @@
 <testExecutions version="1">
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should render title" duration="199"/>
-    <testCase name="AppComponent should create the app" duration="22"/>
-    <testCase name="AppComponent should have as title 'base-project'" duration="17"/>
-  </file>
   <file path="src/app/plant/plant-list/plant-list.component.spec.ts">
-    <testCase name="PlantListComponent should create" duration="74">
+    <testCase name="PlantListComponent should create" duration="138">
       <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PlantService -&gt; HttpClient -&gt; HttpClient]: 
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PlantService', 'HttpClient', 'HttpClient' ] })
@@ -31,7 +26,7 @@ Error: Expected undefined to be truthy.
     </testCase>
   </file>
   <file path="src/app/plant/plant.service.spec.ts">
-    <testCase name="Service: Plant should ..." duration="6">
+    <testCase name="Service: Plant should ..." duration="7">
       <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PlantService -&gt; HttpClient -&gt; HttpClient]: 
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PlantService', 'HttpClient', 'HttpClient' ] })
@@ -49,5 +44,17 @@ NullInjectorError: R3InjectorError(DynamicTestModule)[PlantService -&gt; HttpCli
     at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
 </failure>
     </testCase>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should render title" duration="39">
+      <failure message="Error">Error: Expected undefined to contain 'base-project app is running!'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/app.component.spec.ts:29:66)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    </testCase>
+    <testCase name="AppComponent should have as title 'base-project'" duration="12"/>
+    <testCase name="AppComponent should create the app" duration="15"/>
   </file>
 </testExecutions>
